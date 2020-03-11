@@ -1,0 +1,53 @@
+.btn {
+  @apply h-form-control px-6 outline-none inline-flex items-center justify-center font-bold rounded-form-control outline-none;
+
+  min-width: 12.5rem;
+
+  &:focus {
+    @apply outline-none;
+  }
+
+  &--primary {
+    @apply bg-red-500 text-white transition-all ease-in-out duration-75;
+
+    &:hover {
+      @apply bg-red-600 outline-none;
+    }
+
+    &:active {
+      @apply bg-red-500 outline-none;
+    }
+
+    &:focus {
+      @apply bg-red-700;
+    }
+  }
+
+  &--success {
+    @apply bg-green-500 text-white transition-all ease-in-out duration-75;
+
+    &:hover {
+      @apply bg-green-600 outline-none;
+    }
+
+    &:active {
+      @apply bg-green-500 outline-none;
+    }
+
+    &:focus {
+      @apply bg-green-700;
+    }
+  }
+
+  &--lg {
+    @apply h-form-control-lg px-8;
+  }
+
+  &--xl {
+    @apply h-form-control-xl px-8 text-xl;
+
+    @screen sm {
+      min-width: 18.75rem;
+    }
+  }
+}

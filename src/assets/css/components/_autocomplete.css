@@ -1,0 +1,32 @@
+.autocomplete {
+  @apply absolute bg-white shadow-lg w-full z-10 text-sm rounded h-56 overflow-auto hidden;
+
+  &__item {
+    @apply px-4 py-2 block border-b cursor-pointer w-full outline-none text-left;
+
+    &:hover {
+      @apply bg-gray-100 outline-none;
+    }
+
+    &:focus {
+      @apply bg-gray-200 outline-none;
+    }
+
+    &:active {
+      @apply bg-blue-500 text-white;
+
+      strong {
+        @apply text-white;
+      }
+    }
+
+    strong {
+      @apply text-red-500 font-semibold;
+    }
+  }
+
+  /* states */
+  &.is-active {
+    @apply block;
+  }
+}

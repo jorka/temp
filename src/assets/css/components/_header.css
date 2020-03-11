@@ -1,0 +1,7 @@
+.header {
+  @apply bg-white py-2 shadow select-none;
+
+  @screen md {
+    @apply py-3;
+  }
+}

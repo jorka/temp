@@ -1,0 +1,23 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-hex-length": "long",
+    "no-descending-specificity": null,
+    "max-nesting-depth": [2, {
+        "ignore": ["pseudo-classes"],
+        "ignoreAtRules": ["media", "supports"]
+    }],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "responsive",
+          "variants",
+          "screen"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{# uncomment to minimize code #}
+{# {% apply spaceless %} #}
+
+{# macros #}
+{% from '../macros/icon.twig' import icon as icon %}
+{% from '../macros/picture.twig' import picture as picture %}
+
+<!doctype html>
+<html lang="fr">
+  {% include "../components/head.twig" %}
+  <body class="{% if colorTheme == 'blue' %} {% if primaryColor == 'bluekiosk' %} bg-bluekiosk {% else %} bg-blue-500 {% endif %} {% endif %}">
+    {% include "../components/header.twig" %}
+    {% block content %}{% endblock %}
+
+    {% if footerBig == true %}
+      {% include "../components/footer-full.twig" %}
+    {% endif %}
+
+
+    {% block js %}
+      <script src="assets/js/app.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js" integrity="sha256-kTezPOsOi5ZsWUKr7/D/EWcONq/hdrc0gPwk5/IUYy0=" crossorigin="anonymous"></script>
+      <script>
+        svg4everybody();
+      </script>
+    {% endblock %}
+  </body>
+</html>
+{# {% endapply %} #}

@@ -1,0 +1,44 @@
+<div class="h-full flex flex-col justify-center">
+  <form
+    action="step-2.html">
+    {# states - .is-valid or .is-invalid on .form-control #}
+    <div class="form-group mb-4">
+      <label for="marque">Marque :</label>
+      <input
+      type="text" id="marque" name="marque" value="" class="form-control {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" autofocus>
+      {# states - .is-active #}
+      <span class="form-error">Error message</span>
+      <div class="arrow-input-focus"></div>
+      {# states: .is-active #}
+      <div class="autocomplete">
+        {% for i in range(0, 10) %}
+          <button type="button" class="autocomplete__item">
+            <strong>M</strong>arque
+            {{i}}</button>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="form-group mb-4">
+      <label for="model">Modèle :</label>
+      <input type="text" id="model" name="model" value="" class="form-control {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}">
+      <span class="form-error">Error message</span>
+    </div>
+    <div class="form-group mb-4">
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" value="" class="form-control {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}">
+      <span class="form-error">Error message</span>
+    </div>
+    {% if agreeOnStep1 == true %}
+      <div class="form-group">
+        <div class="form-checkbox">
+          <input type="checkbox" name="agree" id="agree">
+          <label for="agree" class="text-sm leading-tight">
+          Je confirme avoir lu et accepté les <a href="#" class="underline hover:no-underline"><strong>C.G.V.</strong></a> et l'offre d'abonnement présentée sur la droite.</label>
+        </div>
+      </div>
+    {% endif %}
+    <div class="form-group text-center mt-10">
+      <button type="submit" class="btn btn--lg btn--primary">Suivant</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+/* purgecss start ignore */
+@import './tailwind';
+
+@import './components/container';
+@import './components/header';
+@import './components/steps';
+@import './components/card';
+@import './components/form-group';
+@import './components/form-control';
+@import './components/form-checkbox';
+@import './components/form-error';
+@import './components/form-required-indicator';
+@import './components/autocomplete';
+@import './components/btn';
+@import './components/arrow-input-focus';
+@import './components/preview';
+/* purgecss end ignore */
+
+@tailwind utilities;
