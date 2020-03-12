@@ -1,10 +1,12 @@
 <div class="py-6 px-10 mb-6 {% if colorTheme == 'blue' %}text-white {% if primaryColor == 'bluekiosk' %}bg-blue-500{% else %}bg-blue-600{% endif %} {% else %} bg-gray-200{% endif %}">
   <h2 class="text-2xl font-bold mb-4">Votre Recherche :</h2>
   <div class="sm:flex lg:block">
-    <div class="preview {% if primaryColor == 'bluekiosk' %}preview--bluekiosk{% endif %} mb-6 sm:mb-0 lg:mb-6" data-text="Mode d'emploi">
+    <div
+      class="preview {% if primaryColor == 'bluekiosk' %}preview--bluekiosk{% endif %} mb-6 sm:mb-0 lg:mb-6" data-text="Mode d'emploi">
       {# if logo #}
-      {# <img src="assets/img/brands/logo-toyota.svg" class="preview__logo" alt=""/> #}
-        <span class="preview__recherche"> Samsung Galaxy S20 Ultra</span>
+      <span data-logo class="preview__logo"></span>
+      <span class="preview__recherche">
+        Samsung Galaxy S20 Ultra</span>
       <div class="preview__in"></div>
     </div>
     <ul class="sm:ml-6 lg:ml-0">
