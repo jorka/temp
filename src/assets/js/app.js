@@ -1,5 +1,7 @@
-import BrandLoader from './modules/brand-loader';
+import CcInputs from './modules/cc-inputs';
+import SubmitSearch from './modules/submit-search';
 
 (function() {
-  BrandLoader();
+  // SubmitSearch('#step-1', '[data-search]', '[data-logo]');
+  CcInputs('[data-card]');
 })();

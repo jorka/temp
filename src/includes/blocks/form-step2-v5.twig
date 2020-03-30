@@ -39,7 +39,7 @@
     <div class="form-group mb-2">
       <div class="sm:flex items-center">
         <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_date">Date d’expiration :</label>
-        <div class="flex items-center relative">
+        <div class="flex items-center relative" style="flex: 0 0 28%">
           <input type="text" id="card_date" name="card_date" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" placeholder="MM/YYYY" value="" required>
           <span class="form-error">Error message</span>
           <span class="form-required-indicator">*</span>
@@ -48,9 +48,9 @@
     </div>
     <div class="form-group">
       <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_cvv">Cvv :</label>
-        <div class="flex items-center relative">
-          <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %} w-20" placeholder="123" value="" required>
+        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_cvv">CVV :</label>
+        <div class="flex items-center relative" style="flex: 0 0 14%;">
+          <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" placeholder="123" value="" required>
           <span class="form-error">Error message</span>
           <span class="form-required-indicator">*</span>
         </div>
@@ -81,7 +81,7 @@
     {% else %}
 
       <div class="form-group text-center mb-8 md:mb-12">
-        <button type="submit" class="btn btn--xl w-full btn--success">Valider et Payer</button>
+        <button type="submit" class="btn btn--xl w-full btn--success">Valider la Commande et Payer</button>
       </div>
 
     {% endif %}

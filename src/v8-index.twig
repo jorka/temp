@@ -1,0 +1,43 @@
+{% extends 'includes/layouts/layout-v8.twig' %}
+{% set step = 1 %}
+
+{% block content %}
+  <div class="container">
+    <div class="flex flex-col items-start lg:items-stretch lg:flex-row mt-4">
+      <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
+        <div class="card card--bluekiosk bg-gray-100 h-full">
+          <div class="card__header">
+            <h1>
+              Rechercher Votre Mode d'Emploi ici
+            </h1>
+          </div>
+          <div class="card__body">
+            {% include './includes/blocks/form-step1-v5.twig' %}
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 lg:ml-12">
+        <div class="border p-6 h-full">
+          {% include './includes/blocks/services-v3.twig' %}
+          {% include './includes/blocks/offer-description-v3.twig' %}
+          <div class="mt-8">
+            {% include './includes/blocks/trust-features.twig' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-start lg:items-stretch lg:flex-row mt-6">
+      <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
+        <div class="border p-6 h-full">
+          {% include './includes/blocks/steps-information-v2.twig' %}
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 lg:ml-12">
+        {% include './includes/blocks/video.twig' %}
+      </div>
+    </div>
+  </div>
+
+  {% include 'includes/components/footer-logos.twig' %}
+  {% include 'includes/components/footer-v2.twig' %}
+{% endblock %}

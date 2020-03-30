@@ -29,14 +29,25 @@
       <span class="form-error">Error message</span>
     </div>
     {% if agreeOnStep1 == true %}
+
       <div class="form-group">
         <div class="form-checkbox form-checkbox--style2">
           <input type="checkbox" name="agree" id="agree">
-          <label for="agree" class="text-sm leading-tight">Je confirme avoir lu et accepté les
+          <label for="agree" class="text-sm leading-tight">JJe confirme avoir lu et accepté les 
             <a href="#" class="underline hover:no-underline">
               <strong>C.G.V.</strong>
             </a>
-            et l'offre d'abonnement présentée sur la droite, ainsi que la charte de confidentialité.</label>
+            et l’offre d’abonnement présentée à droite.</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-checkbox form-checkbox--style2">
+          <input type="checkbox" name="agree2" id="agree2">
+          <label for="agree2" class="text-sm leading-tight">Je confirme avoir lu et accepté la 
+            <a href="#" class="underline hover:no-underline">
+              <strong>Charte de Confidentialité</strong>
+            </a>
+            , et j’accepte de recevoir des emails d’information concernant les services.</label>
         </div>
       </div>
     {% endif %}

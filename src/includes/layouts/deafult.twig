@@ -12,9 +12,11 @@
     {% include "../components/header.twig" %}
     {% block content %}{% endblock %}
 
-    {% if footerBig == true %}
-      {% include "../components/footer-full.twig" %}
-    {% endif %}
+    {% block footer %}
+      {% if footerBig == true %}
+        {% include "../components/footer-full.twig" %}
+      {% endif %}
+    {% endblock %}
 
 
     {% block js %}

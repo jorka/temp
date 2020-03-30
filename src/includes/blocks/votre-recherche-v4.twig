@@ -1,5 +1,5 @@
-<div class="p-4 mb-2 text-left {% if colorTheme == 'blue' %}text-white {% if primaryColor == 'bluekiosk' %}bg-blue-500{% else %}bg-blue-600{% endif %} {% else %} bg-gray-200{% endif %}">
-  <h2 class="text-xl font-bold mb-2 text-center">Récapitulatif de commande</h2>
+<div class="p-4 mb-2 text-left h-full {% if colorTheme == 'blue' %}text-white {% if primaryColor == 'bluekiosk' %}bg-blue-500{% else %}bg-blue-600{% endif %} {% else %} bg-gray-200{% endif %}">
+  <h2 class="text-xl font-bold mb-2 text-center">Rappel de l’offre sélectionnée</h2>
   <div class="sm:flex lg:block">
     <div
       class="preview preview--sm {% if primaryColor == 'bluekiosk' %}preview--bluekiosk{% endif %} mb-4 sm:mb-0 mx-auto sm:mx-0 lg:mx-auto lg:mb-6" data-text="Mode d'emploi">
@@ -23,10 +23,11 @@
           <span data-search="email"></span>
         </li>
       </ul>
-      <p class="text-sm">* Période d'essai : 1,99 €  pour 3 jours</p>
       <p class="text-sm">
         <a href="index.html" class="underline hover:no-underline">Modifier</a>
       </p>
+      <p class="text-sm">* Période d'essai : 1,99 € TTC pour 3 jours</p>
     </div>
   </div>
+  {% include './offer-description-v4.twig' %}
 </div>
