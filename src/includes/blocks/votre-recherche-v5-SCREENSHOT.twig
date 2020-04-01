@@ -11,25 +11,44 @@
       </span>
       <div class="preview__in"></div>
     </div>
-    <div class="sm:ml-6">
+    <div class="sm:ml-6 min-w-0">
       <ul class="mb-2 leading-tight text-sm">
-        <li>Marque :
-          <span data-search="marque"></span>
+        <li class="mb-2">Marque :
+          <span data-search="marque" class="block truncate" title="Apple">Apple</span>
         </li>
-        <li>Modèle :
-          <span data-search="model"></span>
+        <li class="mb-2">Modèle :
+          <span data-search="model" class="block truncate" title="iPhone 8 plus">iPhone 8 plus</span>
         </li>
         <li>Votre Email :
-          <span data-search="email"></span>
+          <span data-search="email" class="block truncate" title="marie.duchamps264@gmail.com">marie.duchamps264@gmail.com</span>
         </li>
       </ul>
     </div>
   </div>
-  <p class="text-sm mb-2">
-    Manuels d’utilisation<br>
-    Guides pour la maison<br>
-    Dépannage à distance
-  </p>
+  <div class="flex mb-2">
+    <span class="flex-shrink-0 mr-2 -mt-1">
+      {{ icon('manuals', 'w-4 h-4 text-gray-600') }}
+    </span>
+    <div>
+      <h3 class="text-sm text-gray-800">Manuels d’utilisation</p>
+    </div>
+  </div>
+  <div class="flex mb-2">
+    <span class="flex-shrink-0 mr-2 -mt-1">
+      {{ icon('guides', 'w-4 h-4 text-gray-600') }}
+    </span>
+    <div>
+      <h3 class="text-sm text-gray-800">Guides pour la maison</p>
+    </div>
+  </div>
+  <div class="flex mb-4">
+    <span class="flex-shrink-0 mr-2 -mt-1">
+      {{ icon('support', 'w-4 h-4 text-gray-600') }}
+    </span>
+    <div>
+      <h3 class="text-sm text-gray-800">Dépannage à distance</p>
+    </div>
+  </div>
   <p class="text-sm">
         <a href="index.html" class="underline hover:no-underline">Modifier</a>
       </p>

@@ -7,9 +7,9 @@ export default function CcInputs(els) {
         inputEls[index + 1].focus();
       }
 
-      if (el.value.length === el.maxLength && index == 1) {
-        window.location.replace('/error');
-      }
+      // if (el.value.length === el.maxLength && index == 1) {
+      //   window.location.replace('/error');
+      // }
     });
   });
 }
