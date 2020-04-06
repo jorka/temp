@@ -1,0 +1,27 @@
+{% extends 'includes/layouts/layout-v8.twig' %}
+
+{% block content %}
+  <div class="container">
+    <div class="py-20 lg:py-32 flex items-center justify-center">
+      <div class="md:flex items-start">
+        <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
+          <img src="assets/img/error.svg" alt="" />
+        </div>
+        <div>
+          <h1 class="font-semibold text-xl">
+            Erreur : notre système vient de rencontrer un problème !
+          </h1>
+          <p class="mb-4">
+            Nous ne pouvons pas traiter votre demande.
+          </p>
+          <p>
+            Important : aucun paiement n’a été effectué.<br />
+            Notre équipe vient d’être notifiée de cette erreur technique.<br />
+            Elle va y apporter une solution dans les meilleurs délais.<br />
+            Merci de votre compréhension.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
