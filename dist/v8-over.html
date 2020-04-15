@@ -34,29 +34,12 @@
     <header class="header">
   <div class="container">
     <div class="flex items-center">
-      <div class="mx-auto sm:mx-0 lg:hidden">
+      <div class="mx-auto sm:mx-0 ">
         <a href="index.html" class="flex items-center font-semibold text-2xl text-gray-600" aria-label="Notices">
           <img src="assets/img/logo-4.svg" class="flex-shrink-0 mr-2" alt="">
           <span class="">Notices</span>
         </a>
       </div>
-      
-        <div class="steps steps--bluekiosk steps--big-arrow hidden sm:flex ml-auto lg:mx-auto">
-  <div class="steps__item is-done ">
-    <div class="steps__num">1</div>
-    <div class="steps__label">Création de compte</div>
-  </div>
-  <div class="steps__item  is-active">
-    <div class="steps__num">2</div>
-    <div class="steps__label">Paiement</div>
-  </div>
-  <div class="steps__item  ">
-    <div class="steps__num">3</div>
-    <div class="steps__label">Accédez aux services</div>
-  </div>
-</div>
-
-
       
       
     </div>
@@ -65,173 +48,57 @@
 
     
   <div class="container">
-    <div class="flex flex-col items-start xl:items-stretch lg:flex-row my-4 mb-12 sm:my-4">
-      <div class="w-full lg:w-2/3 mb-6 lg:mb-0">
-        <div class="card card--bluekiosk bg-gray-100">
-          <div class="card__header">
-            <h1>
-              Payer ici
-            </h1>
+    <div class="pt-4 lg:pt-8">
+
+      <div class="bg-orange-200 rounded" role="alert">
+        <div class="flex p-4 md:p-8">
+          <div class="flex-shrink-0 mr-4 text-orange-600">
+            <svg version="1.1" class="icon inline-block fill-current w-8 h-8" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewbox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+              <path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+                                                                                                                                                                                                                                                                                                                                                                                                                S17.5,2,12,2z"/>
+              <path d="M12,14L12,14c-0.6,0-1-0.4-1-1V7c0-0.6,0.4-1,1-1h0c0.6,0,1,0.4,1,1v6C13,13.6,12.6,14,12,14z"/>
+              <path d="M12,18L12,18c-0.6,0-1-0.4-1-1v0c0-0.6,0.4-1,1-1h0c0.6,0,1,0.4,1,1v0C13,17.6,12.6,18,12,18z"/>
+            </svg>
           </div>
-          <div class="card__body">
-            <div class="h-full flex flex-col justify-center">
-  <div class="flex flex-col md:flex-row items-center mb-6 -mx-8">
-    <div class="flex items-center flex-grow mb-2 md:mb-0">
-      
-  <svg class="inline-block fill-current w-8 h-8 mr-2 text-red-500" aria-hidden="true" role="presentation">
-    <use xlink:href="assets/img/sprite.svg#icon-lock"></use>
-  </svg>
-
-      <h3 class="texl-xl sm:text-2xl font-bold whitespace-no-wrap mr-4">Paiement 100% sécurisé</h3>
-    </div>
-    
-  <picture>
-    <source srcset="assets/img/cards-payment.webp 1x, assets/img/cards-payment@2x.webp 2x" type="image/webp"/>
-    <source srcset="assets/img/cards-payment.png" type="image/png"/>
-    <img src="assets/img/cards-payment.png" srcset="assets/img/cards-payment.png 1x, assets/img/cards-payment@2x.png 2x" alt="" loading="lazy" class=""/>
-  </picture>
-
-  </div>
-  <form action="v7-white-step-2.html">
-    <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <span class="mb-0 sm:w-5/12 sm:text-right mr-4 flex-shrink-0">Montant à régler ce jour* :</span>
-        <span class="text-red-500 font-semibold text-xl">1,99 €</span>
-      </div>
-    </div>
-    <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_name">Titulaire de la carte :</label>
-        <div class="flex items-center flex-grow relative">
-          <input type="text" class="form-control form-control--style2 form-control--bluekiosk" name="card_name" id="card_name" value="" required>
-          <span class="form-error">Error message</span>
-          <span class="form-required-indicator">*</span>
-        </div>
-      </div>
-    </div>
-    <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_num">Numéro de la carte :</label>
-        <div class="flex items-center relative">
-          <input data-card type="text" name="card_num" id="card_num" class="form-control form-control--style2 mr-2 form-control--bluekiosk" maxlength="4" value="" required>
-          <input data-card type="text" name="card_num2" id="card_num2" class="form-control form-control--style2 mr-2 form-control--bluekiosk" maxlength="4" value="" required>
-          <input data-card type="text" name="card_num3" id="card_num3" class="form-control form-control--style2 mr-2 form-control--bluekiosk" maxlength="4" value="" required>
-          <input data-card type="text" name="card_num4" id="card_num4" class="form-control form-control--style2 form-control--bluekiosk" maxlength="4" value="" required>
-          <span class="form-error">Error message</span>
-          <span class="form-required-indicator">*</span>
-        </div>
-      </div>
-    </div>
-    <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_date">Date d’expiration :</label>
-        <div class="flex items-center relative" style="flex: 0 0 28%">
-          <input type="text" id="card_date" name="card_date" class="form-control form-control--style2 form-control--bluekiosk" placeholder="MM/YYYY" value="" required>
-          <span class="form-error">Error message</span>
-          <span class="form-required-indicator">*</span>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_cvv">CVV :</label>
-        <div class="flex items-center relative" style="flex: 0 0 14%;">
-          <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control form-control--style2 form-control--bluekiosk" placeholder="123" value="" required>
-          <span class="form-error">Error message</span>
-          <span class="form-required-indicator">*</span>
-        </div>
-      </div>
-    </div>
-
-    
-
-      <div class="form-group text-center mb-8 md:mb-12">
-        <button type="submit" class="btn btn--xl w-full btn--success">Valider la Commande et Payer</button>
-      </div>
-
-    
-  </form>
-</div>
-
+          <div class="flex-grow">
+            <p class="font-bold mb-2">Votre commande a bien été prise en compte !</p>
+            <div class="text-xs">
+              <strong>Statut du Paiement :</strong>
+              Accepté<br>
+              <strong>Statut de votre commande :</strong>
+              La notice demandée ne figure pas parmi notre bibliothèque de 50 000 notices, nos équipes sont déjà en train de la rechercher pour vous !<br>
+              <strong>Durée moyée de recherche :</strong>
+              11 minutes entre 10h et 17h.<br>
+              <strong>Commande envoyée :</strong>
+              (en cas d’email incorrect, vous pouvez contacter notre service client pour toute modification).
+            </div>
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-1/3 lg:ml-12">
-        <div class="p-4 mb-2 text-left h-full  bg-gray-200">
-  <h2 class="text-xl font-bold mb-2 text-center">Rappel de l’offre sélectionnée</h2>
-  <div class="sm:flex items-center">
-    <div
-      class="preview preview--sm preview--bluekiosk mb-4 mx-auto sm:mx-0 lg:mb-6" data-text="Mode d'emploi">
-      
-      <span data-logo class="preview__logo"></span>
-      <span class="preview__recherche">
-        <span data-search="marque"></span>
-        <span data-search="model"></span>
-      </span>
-      <div class="preview__in"></div>
-    </div>
-    <div class="sm:ml-6 min-w-0">
-      <ul class="mb-2 leading-tight text-sm text-center">
-        <li class="mb-2">Marque :
-          <span data-search="marque" class="block truncate" title="Apple">Apple</span>
-        </li>
-        <li class="mb-2">Modèle :
-          <span data-search="model" class="block truncate" title="iPhone 8 plus">iPhone 8 plus</span>
-        </li>
-        <li>Votre Email :
-          <span data-search="email" class="block truncate" title="marie.duchamps264@gmail.com">marie.duchamps264@gmail.com</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="flex mb-4">
-    <span class="flex-shrink-0 mr-4 -mt-1">
-      
-  <svg class="inline-block fill-current w-6 h-6 text-gray-600" aria-hidden="true" role="presentation">
-    <use xlink:href="assets/img/sprite.svg#icon-manuals"></use>
-  </svg>
 
-    </span>
-    <div>
-      <h3 class="text-sm text-gray-800">Manuels d’utilisation</p>
-    </div>
-  </div>
-  <div class="flex mb-4">
-    <span class="flex-shrink-0 mr-4 -mt-1">
-      
-  <svg class="inline-block fill-current w-6 h-6 text-gray-600" aria-hidden="true" role="presentation">
-    <use xlink:href="assets/img/sprite.svg#icon-guides"></use>
-  </svg>
-
-    </span>
-    <div>
-      <h3 class="text-sm text-gray-800">Guides pour la maison</p>
-    </div>
-  </div>
-  <div class="flex mb-4">
-    <span class="flex-shrink-0 mr-4 -mt-1">
-      
-  <svg class="inline-block fill-current w-6 h-6 text-gray-600" aria-hidden="true" role="presentation">
-    <use xlink:href="assets/img/sprite.svg#icon-support"></use>
-  </svg>
-
-    </span>
-    <div>
-      <h3 class="text-sm text-gray-800">Dépannage à distance</p>
-    </div>
-  </div>
-  <p class="text-sm mb-4">
-    <a href="index.html" class="underline hover:no-underline">Modifier</a>
-  </p>
-  <p class="text-sm">* Période d'essai : 1,99 € TTC pour 3 jours</p>
-  <div class=" text-gray-600 mb-2 mt-4">
-  <h3 class="font-bold text-sm text-gray-800">Présentation de l’offre Express</h3>
-  <p class="text-sm leading-tight">Pour accéder à nos services, vous bénéficiez d'une période d'essai de 3 jours qui vous est facturée 1,99 € TTC. À l'issue de cette période d'essai de 3 jours, et tous les deux mois, vous serez facturé 59 € TTC pour une durée indéterminée en cas de non dénonciation du contrat durant la période d’essai. Cette offre d’abonnement est sans engagement et résiliable à tout moment. Important : Si vous désirez accéder à la notice du constructeur sans l'accompagnement de nos services, vous pouvez le faire gratuitement en accédant au site internet du constructeur.</p>
-</div>
-
-</div>
-
+      <div class="flex flex-col sm:flex-row -mx-4 items-center justify-center mt-6">
+        <div class="px-4">
+          <div
+            class="preview preview--bluekiosk mb-4 mx-auto sm:mx-0 lg:mb-6" data-text="Mode d'emploi">
+            
+            <span data-logo class="preview__logo"></span>
+            <span class="preview__recherche">
+              <span data-search="marque"></span>
+              <span data-search="model"></span>
+            </span>
+            <div class="preview__in"></div>
+          </div>
+        </div>
+        <div class="px-4">
+          <p class="mb-4">
+            <strong>En dehors de ces horaires votre demande sera traitée<br>
+              dès l’ouverture du Service Client (10h - 17h).</strong>
+          </p>
+          <p>Merci de votre confiance.</p>
+        </div>
       </div>
+
+
     </div>
   </div>
 

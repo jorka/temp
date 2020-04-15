@@ -1,4 +1,5 @@
 import CcInputs from './modules/cc-inputs';
+import './modules/modal';
 import SubmitSearch from './modules/submit-search';
 
 (function() {

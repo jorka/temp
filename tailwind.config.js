@@ -52,6 +52,7 @@ module.exports = {
           color: '#c0c5da',
         },
         bluekiosk: '#4691DC',
+        modalBackdrop: 'rgba(0,0,0,.6)',
       },
       height: {
         'form-control': '2.625rem',

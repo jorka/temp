@@ -1,0 +1,23 @@
+.modal {
+  &__dialog {
+    .is-modal-open & {
+      @apply translate-y-0;
+    }
+  }
+
+  &__backdrop {
+    .is-modal-open & {
+      @apply opacity-100;
+    }
+  }
+
+  &.is-static {
+    [data-modal-close] {
+      @apply pointer-events-none;
+    }
+
+    .modal__close {
+      @apply hidden;
+    }
+  }
+}
