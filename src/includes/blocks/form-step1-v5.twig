@@ -33,18 +33,24 @@
         <div class="form-checkbox form-checkbox--style2">
           <input type="checkbox" name="agree" id="agree">
           <label for="agree" class="text-sm leading-tight">
-            Je confirme avoir lu et accepté la <a href="#" class="underline hover:no-underline"><strong>Charte de Confidentialité</strong></a>, les <a href="#" class="underline hover:no-underline"><strong>C.G.V.</strong></a> et l'offre d'abonnement présentée à droite.</label>
+            Je confirme avoir lu et accepté la
+            <a href="#" class="underline hover:no-underline">
+              <strong>Charte de Confidentialité</strong>
+            </a>, les
+            <a href="#" class="underline hover:no-underline">
+              <strong>C.G.V.</strong>
+            </a>, et sélectionné l’offre d’abonnement présentée à droite.
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <div class="form-checkbox form-checkbox--style2">
-          <input type="checkbox" name="agree2" id="agree2">
-          <label for="agree2" class="text-sm leading-tight">J'accepte de recevoir des emails d'informations concernant les services.</label>
+        <div class="form-group">
+          <div class="form-checkbox form-checkbox--style2">
+            <input type="checkbox" name="agree2" id="agree2">
+            <label for="agree2" class="text-sm leading-tight">J'accepte de recevoir des emails d'informations concernant les services.</label>
+          </div>
         </div>
+      {% endif %}
+      <div class="form-group text-center my-10">
+        <button type="submit" class="btn btn--xl btn--primary">Suivant</button>
       </div>
-    {% endif %}
-    <div class="form-group text-center my-10">
-      <button type="submit" class="btn btn--xl btn--primary">Suivant</button>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
