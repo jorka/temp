@@ -1,9 +1,0 @@
-.form-error {
-  @apply block text-red-500 absolute text-xs left-0 hidden;
-  top: 100%;
-
-  /* states */
-  &.is-active {
-    @apply block;
-  }
-}

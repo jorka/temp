@@ -1,0 +1,13 @@
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 1.5rem;
+  }
+}

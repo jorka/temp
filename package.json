@@ -19,6 +19,7 @@
     "@babel/preset-env": "^7.8.3",
     "@babel/register": "^7.8.3",
     "@fullhuman/postcss-purgecss": "^2.0.5",
+    "autoprefixer": "^9.7.6",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
     "browserify": "^16.5.0",
@@ -34,6 +35,7 @@
     "gulp-index": "^0.2.0",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-terser": "^1.2.0",
@@ -57,7 +59,7 @@
   },
   "dependencies": {
     "body-scroll-lock": "^3.0.1",
-    "core-js": "3",
-    "tailwindcss": "^1.1.4"
+    "bootstrap": "^4.4.1",
+    "core-js": "3"
   }
 }

@@ -1,0 +1,70 @@
+.btn {
+  height: $h-form-control;
+  padding: 0 1.5rem;
+  outline: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $font-weight-bold;
+  border-radius: 0.25em;
+  min-width: 12.5rem;
+  border: 0;
+  text-decoration: none !important;
+
+  &--primary {
+    background: $red;
+    color: $white;
+    transition: $transition-base;
+
+    &:hover {
+      background: darken($red, 5%);
+      color: $white;
+    }
+
+    &:active {
+      background: $red;
+      color: $white;
+    }
+
+    &:focus {
+      background: darken($red, 10%);
+      color: $white;
+    }
+  }
+
+  &--success {
+    background: $green;
+    color: $white;
+    transition: $transition-base;
+
+    &:hover {
+      background: darken($green, 5%);
+      color: $white;
+    }
+
+    &:active {
+      background: $green;
+      color: $white;
+    }
+
+    &:focus {
+      background: darken($green, 10%);
+      color: $white;
+    }
+  }
+
+  &--lg {
+    height: $h-form-control-lg;
+    padding: 0 2rem;
+  }
+
+  &--xl {
+    height: $h-form-control-xl;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+
+    @include media-breakpoint-up(sm) {
+      min-width: 18.75rem;
+    }
+  }
+}

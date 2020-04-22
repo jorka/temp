@@ -1,4 +1,4 @@
-<div class="steps {% if primaryColor == 'bluekiosk' %}steps--bluekiosk{% endif %} {% if stepsVariant == 2 %}steps--big-arrow{% endif %} hidden sm:flex ml-auto lg:mx-auto">
+<div class="steps d-none d-sm-flex ml-auto mx-lg-auto">
   <div class="steps__item {% if step > 1 and step is not empty  %}is-done{% endif %} {% if step == 1 %}is-active{% endif %}">
     <div class="steps__num">1</div>
     <div class="steps__label">{{ step1Label }}</div>

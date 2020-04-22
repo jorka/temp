@@ -1,0 +1,28 @@
+.form-control {
+  height: $h-form-control;
+  border-radius: 0;
+  height: 2.625rem;
+  padding: 0 0.75rem;
+  border: 1px solid $gray-400;
+  border-left-width: 4px;
+  border-left-color: $blue;
+  outline: 0;
+  width: 100%;
+
+  &:focus {
+    border-color: $blue;
+  }
+
+  /* states */
+  &.is-valid {
+    border-color: $green;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIGlkPSdMYXllcl8xJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB4PScwcHgnIHk9JzBweCcgd2lkdGg9JzI0cHgnIGhlaWdodD0nMjRweCcgdmlld0JveD0nMCAwIDI0IDI0JyBlbmFibGUtYmFja2dyb3VuZD0nbmV3IDAgMCAyNCAyNCcgeG1sOnNwYWNlPSdwcmVzZXJ2ZSc+PHBhdGggZmlsbD0nIzI2QzQ4RCcgZD0nTTEyLDBDNS40LDAsMCw1LjQsMCwxMnM1LjQsMTIsMTIsMTJzMTItNS40LDEyLTEyUzE4LjYsMCwxMiwweiBNOS44LDE4LjJsLTUuMy01LjNsMS44LTEuOGwzLjUsMy41bDcuOS03LjkgbDEuOCwxLjhMOS44LDE4LjJ6Jy8+PC9zdmc+);
+    background-position: calc(100% - 0.75rem) center;
+    background-size: 1.125rem;
+  }
+
+  &.is-invalid {
+    border-color: $red;
+  }
+}

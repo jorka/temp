@@ -1,0 +1,445 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="description" content="Notices"/>
+  <meta name="author" content="Notices"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>
+    
+      Notices
+    
+  </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#cb202a">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#cb202a">
+  <meta name="theme-color" content="#cb202a">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+
+  <body class="">
+    <header class="header">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="mx-auto mx-sm-0 d-none">
+        <a href="index.html" class="d-flex align-items-center font-weight-bold text-2xl text-gray-600" aria-label="Notices">
+          <img src="assets/img/logo-4.svg" class="flex-shrink-0 mr-2" alt="">
+          <span class="">Notices</span>
+        </a>
+      </div>
+      
+        <div class="steps d-none d-sm-flex ml-auto mx-lg-auto">
+  <div class="steps__item is-done ">
+    <div class="steps__num">1</div>
+    <div class="steps__label">Création de compte</div>
+  </div>
+  <div class="steps__item  is-active">
+    <div class="steps__num">2</div>
+    <div class="steps__label">Paiement</div>
+  </div>
+  <div class="steps__item  ">
+    <div class="steps__num">3</div>
+    <div class="steps__label">Accédez aux services</div>
+  </div>
+</div>
+
+
+      
+      
+    </div>
+  </div>
+</header>
+
+    
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-lg-8 mb-4 mb-lg-0">
+        <div class="card bg-gray-100">
+          <div class="card__header">
+            <h1>
+              Payer ici
+            </h1>
+          </div>
+          <div class="card__body">
+            <div class="h-full d-flex flex-column justify-content-center">
+  <div class="d-flex flex-column flex-md-row align-items-center mb-6 -mx-8">
+    <div class="d-flex align-items-center flex-grow mb-2 mb-md-0">
+      
+  <svg class="icon w-8 h-8 mr-2 text-danger d-none d-sm-block" aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-lock"></use>
+  </svg>
+
+      <h3 class="h4 mb-0 font-bold text-nowrap mr-md-4">Paiement 100% sécurisé</h3>
+    </div>
+    <span>
+      
+  <picture>
+    <source srcset="assets/img/cards-payment.webp 1x, assets/img/cards-payment@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/cards-payment.png" type="image/png"/>
+    <img src="assets/img/cards-payment.png" srcset="assets/img/cards-payment.png 1x, assets/img/cards-payment@2x.png 2x" alt="" loading="lazy" class="img-fluid"/>
+  </picture>
+
+    </span>
+  </div>
+  <form action="">
+    <div class="form-group mb-2">
+      <div class="d-sm-flex align-items-center">
+        <span class="mb-0 col-sm-5 pl-0 text-sm-right x-shrink-0">Montant à régler ce jour*&nbsp;:</span>
+        <h5 class="text-danger mb-0">1,99 €</h4>
+      </div>
+    </div>
+    <div class="form-group mb-2">
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_name">Titulaire de la carte&nbsp;:</label>
+        <div class="d-flex align-items-center flex-grow relative">
+          <input type="text" class="form-control" name="card_name" id="card_name" value="" required>
+          <span class="form-error">Error message</span>
+          <span class="form-required-indicator">*</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mb-2">
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_num">Numéro de la carte&nbsp;:</label>
+        <div class="d-flex align-items-center relative">
+          <input data-card type="text" name="card_num" id="card_num" class="form-control mr-2" maxlength="4" value="" required>
+          <input data-card type="text" name="card_num2" id="card_num2" class="form-control mr-2" maxlength="4" value="" required>
+          <input data-card type="text" name="card_num3" id="card_num3" class="form-control mr-2" maxlength="4" value="" required>
+          <input data-card type="text" name="card_num4" id="card_num4" class="form-control" maxlength="4" value="" required>
+          <span class="form-error">Error message</span>
+          <span class="form-required-indicator">*</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mb-2">
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_date">Date d’expiration&nbsp;:</label>
+        <div class="d-flex align-items-center relative" style="flex: 0 0 30%">
+          <input type="text" id="card_date" name="card_date" class="form-control" placeholder="MM/YYYY" value="" required>
+          <span class="form-error">Error message</span>
+          <span class="form-required-indicator">*</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_cvv">CVV&nbsp;:</label>
+        <div class="d-flex align-items-center relative" style="flex: 0 0 15%;">
+          <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control" placeholder="123" value="" required>
+          <span class="form-error">Error message</span>
+          <span class="form-required-indicator">*</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group text-center mb-8 md:mb-12">
+      <button type="submit" class="btn btn--xl w-full btn--success">Valider la Commande et Payer</button>
+    </div>
+  </form>
+</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="p-4 mb-2 text-left h-full bg-gray-200">
+  <h2 class="h5 mb-3 text-center">Rappel de l’offre sélectionnée</h2>
+  <div class="d-sm-flex align-items-center">
+    <div
+      class="preview preview--sm mb-4 mx-auto mx-sm-0 mb-lg-4" data-text="Mode d'emploi">
+      
+      <span data-logo class="preview__logo"></span>
+      <span class="preview__recherche">
+        <span data-search="marque"></span>
+        <span data-search="model"></span>
+      </span>
+      <div class="preview__in"></div>
+    </div>
+    <div class="ml-sm-3" style="min-width:0;">
+      <ul class="mb-4 text-center list-unstyled">
+        <li class="mb-4">Marque :
+          <span data-search="marque" class="d-block text-truncate" title="Apple">Apple</span>
+        </li>
+        <li>Modèle :
+          <span data-search="model" class="d-block text-truncate" title="iPhone 8 plus">iPhone 8 plus</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-sm">Email :
+    <span data-search="email" class="text-truncate" title="marie.duchamps264@gmail.com">marie.duchamps264@gmail.com</span>
+  </p>
+  <div class="d-flex mb-1">
+    <span class="flex-shrink-0 mr-4">
+      
+  <svg class="icon w-6 h-6 text-gray-600" aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-manuals"></use>
+  </svg>
+
+    </span>
+    <div>
+      <p class="text-sm text-body">Manuels d’utilisation</p>
+    </div>
+  </div>
+  <div class="d-flex mb-1">
+    <span class="flex-shrink-0 mr-4">
+      
+  <svg class="icon w-6 h-6 text-gray-600" aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-guides"></use>
+  </svg>
+
+    </span>
+    <div>
+      <p class="text-sm text-body">Guides pour la maison</p>
+    </div>
+  </div>
+  <div class="d-flex mb-1">
+    <span class="flex-shrink-0 mr-4">
+      
+  <svg class="icon w-6 h-6 text-gray-600" aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-support"></use>
+  </svg>
+
+    </span>
+    <div>
+      <p class="text-sm text-body">Dépannage à distance</p>
+    </div>
+  </div>
+  <p class="text-sm mt-3">
+    <a href="index.html" class="underline text-body">Modifier</a>
+  </p>
+  <p class="text-sm">* Période d'essai : 1,99 € ttc pour 3 jours</p>
+  <div class="text-gray-600 mt-4">
+  <h3 class="font-bold text-sm text-body mb-1">Présentation de l’Offre Express</h3>
+  <p class="text-sm leading-tight text-justify mb-0">Pour accéder à nos services, vous bénéficiez d'une période d'essai de 3 jours qui vous est facturée 1,99 € ttc. À l'issue de cette période d'essai de 3 jours, et tous les deux mois, vous serez facturé 59 € ttc pour une durée indéterminée en cas de non dénonciation du contrat durant la période d’essai. Cette offre d’abonnement est sans engagement et résiliable à tout moment. Important : Si vous désirez accéder à la notice du constructeur sans l'accompagnement de nos services, vous pouvez le faire gratuitement en accédant au site internet du constructeur.</p>
+</div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mr-auto">
+        <h3>Nos services techniques sont à votre disposition.</h3>
+        <h5 class="mb-4">N'hésitez pas à nous solliciter 7j/7 !</h5>
+        <div class="phone-support mb-5">
+          <a href="tel:0805086524">
+            <img src=" assets/img/phone2.png" alt=" "/>
+          </a>
+          <div class="phone-support__info">Du lundi au Dimanche de 10h à 17h</div>
+        </div>
+        <p class="mb-6">
+          
+  <picture>
+    <source srcset="assets/img/cards-payment.webp 1x, assets/img/cards-payment@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/cards-payment.png" type="image/png"/>
+    <img src="assets/img/cards-payment.png" srcset="assets/img/cards-payment.png 1x, assets/img/cards-payment@2x.png 2x" alt="" loading="lazy" class=""/>
+  </picture>
+
+        </p>
+        <ul class="list-inline footer__social text-center text-md-left">
+          <li class="list-inline-item">
+            <a href="#">
+              
+  <svg class="icon " aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
+  </svg>
+
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              
+  <svg class="icon " aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-instagram"></use>
+  </svg>
+
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              
+  <svg class="icon " aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-pinterest"></use>
+  </svg>
+
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              
+  <svg class="icon " aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
+  </svg>
+
+            </a>
+          </li>
+        </ul>
+        <p class="mb-2">
+          kiosknotice.com
+        </p>
+        <p class="mb-2">
+          Tuts
+        </p>
+        <p>City of Sofia 1142, Region of Sofia, Sofia Municipality, district Sredets,<br>
+          16 Patriarh Evtimiy Blvd., entrance A, floor 1, apartment 5</p>
+
+      </div>
+      <div class="col-md-6">
+        <h4>Les Marques Populaires</h4>
+        <div class="mb-4 d-flex align-items-center justify-content-between">
+          <span>
+  <picture>
+    <source srcset="assets/img/aeg.webp 1x, assets/img/aeg@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/aeg.png" type="image/png"/>
+    <img src="assets/img/aeg.png" srcset="assets/img/aeg.png 1x, assets/img/aeg@2x.png 2x" alt="" loading="lazy" class="img-fluid rounded p-2 d-block bg-white"/>
+  </picture>
+</span>
+          <span class="ml-2">
+  <picture>
+    <source srcset="assets/img/brandt.webp 1x, assets/img/brandt@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/brandt.png" type="image/png"/>
+    <img src="assets/img/brandt.png" srcset="assets/img/brandt.png 1x, assets/img/brandt@2x.png 2x" alt="" loading="lazy" class="img-fluid rounded p-2 d-block bg-white"/>
+  </picture>
+</span>
+          <span class="ml-2">
+  <picture>
+    <source srcset="assets/img/electrolux.webp 1x, assets/img/electrolux@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/electrolux.png" type="image/png"/>
+    <img src="assets/img/electrolux.png" srcset="assets/img/electrolux.png 1x, assets/img/electrolux@2x.png 2x" alt="" loading="lazy" class="img-fluid rounded p-2 d-block bg-white"/>
+  </picture>
+</span>
+          <span class="ml-2">
+  <picture>
+    <source srcset="assets/img/garmin.webp 1x, assets/img/garmin@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/garmin.png" type="image/png"/>
+    <img src="assets/img/garmin.png" srcset="assets/img/garmin.png 1x, assets/img/garmin@2x.png 2x" alt="" loading="lazy" class="img-fluid rounded p-2 d-block bg-white"/>
+  </picture>
+</span>
+          <span class="ml-2">
+  <picture>
+    <source srcset="assets/img/huawei.webp 1x, assets/img/huawei@2x.webp 2x" type="image/webp"/>
+    <source srcset="assets/img/huawei.png" type="image/png"/>
+    <img src="assets/img/huawei.png" srcset="assets/img/huawei.png 1x, assets/img/huawei@2x.png 2x" alt="" loading="lazy" class="img-fluid rounded p-2 d-block bg-white"/>
+  </picture>
+</span>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-6">
+            <h4>Navigation</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Accueil</a>
+              </li>
+              <li>
+                <a href="#">Nos Garanties</a>
+              </li>
+              <li>
+                <a href="#">Questions fréquentes</a>
+              </li>
+              <li>
+                <a href="#">Partenariat</a>
+              </li>
+              <li>
+                <a href="#">Nous Contacter</a>
+              </li>
+              <li>
+                <a href="#">Plan du Site</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h4>Informations</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">C.G.U.</a>
+              </li>
+              <li>
+                <a href="#">C.G.V.</a>
+              </li>
+              <li>
+                <a href="#">Confidentialité</a>
+              </li>
+              <li>
+                <a href="#">Cookies</a>
+              </li>
+              <li>
+                <a href="#">Mentions Légales</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Formulaire de rétractation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h4>Nos Services</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Manuels d'Utilisation</a>
+              </li>
+              <li>
+                <a href="#">Dépannage à distance</a>
+              </li>
+              <li>
+                <a href="#">Guides pour la Maison</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h4>Abonnement aux Services</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Connexion</a>
+              </li>
+              <li>
+                <a href="#">Mon Abonnement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="text-xs">© Tous droits réservés, 2017-2020</p>
+  </div>
+</footer>
+
+  
+
+
+
+    
+      <script src="assets/js/app.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js" integrity="sha256-kTezPOsOi5ZsWUKr7/D/EWcONq/hdrc0gPwk5/IUYy0=" crossorigin="anonymous"></script>
+      <script>
+        svg4everybody();
+      </script>
+    
+  </body>
+</html>
+

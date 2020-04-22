@@ -1,0 +1,13 @@
+.form-error {
+  display: block;
+  color: $red;
+  position: absolute;
+  font-size: 0.815rem;
+  left: 0;
+  display: none;
+
+  /* states */
+  &.is-active {
+    display: block;
+  }
+}

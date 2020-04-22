@@ -5,51 +5,44 @@
     <div class="form-group">
       <label for="marque">Votre marque</label>
       <input
-      type="text" placeholder="Marque recherchée" id="marque" name="marque" value="" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" autofocus required>
+      type="text" placeholder="Marque recherchée" id="marque" name="marque" value="" class="form-control" autofocus required>
       {# states - .is-active #}
       <span class="form-error">Error message</span>
       <div class="arrow-input-focus"></div>
       {# states: .is-active #}
-      <div class="autocomplete">
-        {% for i in range(0, 10) %}
-          <button type="button" class="autocomplete__item">
-            <strong>M</strong>arque
-            {{i}}</button>
-        {% endfor %}
-      </div>
     </div>
     <div class="form-group">
       <label for="model">Votre modèle</label>
-      <input type="text" placeholder="Numéro de modèle recherché" id="model" name="model" value="" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}">
+      <input type="text" placeholder="Numéro de modèle recherché" id="model" name="model" value="" class="form-control">
       <span class="form-error">Error message</span>
     </div>
     <div class="form-group">
       <label for="email">Votre adresse email</label>
-      <input type="email" placeholder="Votre adresse email" id="email" name="email" value="" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}">
+      <input type="email" placeholder="Votre adresse email" id="email" name="email" value="" class="form-control">
       <span class="form-error">Error message</span>
     </div>
     {% if agreeOnStep1 == true %}
       <div class="form-group">
-        <div class="form-checkbox form-checkbox--style2">
+        <div class="form-checkbox">
           <input type="checkbox" name="agree" id="agree">
-          <label for="agree" class="text-sm leading-tight">
+          <label for="agree" class="text-sm">
             Je confirme avoir lu et accepté la
-            <a href="#" class="underline hover:no-underline">
+            <a href="#" class="text-body underline">
               <strong>Charte de Confidentialité</strong>
             </a>, les
-            <a href="#" class="underline hover:no-underline">
+            <a href="#" class="text-body underline">
               <strong>C.G.V.</strong>
             </a>, et sélectionné l’offre d’abonnement présentée à droite.
           </div>
         </div>
         <div class="form-group">
-          <div class="form-checkbox form-checkbox--style2">
+          <div class="form-checkbox">
             <input type="checkbox" name="agree2" id="agree2">
-            <label for="agree2" class="text-sm leading-tight">J'accepte de recevoir des emails d'informations concernant les services.</label>
+            <label for="agree2" class="text-sm">J'accepte de recevoir des emails d'informations concernant les services.</label>
           </div>
         </div>
       {% endif %}
-      <div class="form-group text-center my-10">
+      <div class="form-group text-center my-6">
         <button type="submit" class="btn btn--xl btn--primary">Suivant</button>
       </div>
     </form>

@@ -1,89 +1,65 @@
-<div class="h-full flex flex-col justify-center">
-  <div class="flex flex-col md:flex-row items-center mb-6 -mx-8">
-    <div class="flex items-center flex-grow mb-2 md:mb-0">
-      {{ icon('lock', 'w-8 h-8 mr-2 text-red-500') }}
-      <h3 class="texl-xl sm:text-2xl font-bold whitespace-no-wrap mr-4">Paiement 100% sécurisé</h3>
+<div class="h-full d-flex flex-column justify-content-center">
+  <div class="d-flex flex-column flex-md-row align-items-center mb-6 -mx-8">
+    <div class="d-flex align-items-center flex-grow mb-2 mb-md-0">
+      {{ icon('lock', 'w-8 h-8 mr-2 text-danger d-none d-sm-block') }}
+      <h3 class="h4 mb-0 font-bold text-nowrap mr-md-4">Paiement 100% sécurisé</h3>
     </div>
-    {{ picture('assets/img/cards-payment.png', '', '')}}
+    <span>
+      {{ picture('assets/img/cards-payment.png', 'img-fluid', '')}}
+    </span>
   </div>
-  <form action="v7-white-step-2.html">
+  <form action="">
     <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <span class="mb-0 sm:w-5/12 sm:text-right mr-4 flex-shrink-0">Montant à régler ce jour* :</span>
-        <span class="text-red-500 font-semibold text-xl">1,99 €</span>
+      <div class="d-sm-flex align-items-center">
+        <span class="mb-0 col-sm-5 pl-0 text-sm-right x-shrink-0">Montant à régler ce jour*&nbsp;:</span>
+        <h5 class="text-danger mb-0">1,99 €</h4>
       </div>
     </div>
     <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_name">Titulaire de la carte :</label>
-        <div class="flex items-center flex-grow relative">
-          <input type="text" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" name="card_name" id="card_name" value="" required>
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_name">Titulaire de la carte&nbsp;:</label>
+        <div class="d-flex align-items-center flex-grow relative">
+          <input type="text" class="form-control" name="card_name" id="card_name" value="" required>
           <span class="form-error">Error message</span>
           <span class="form-required-indicator">*</span>
         </div>
       </div>
     </div>
     <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_num">Numéro de la carte :</label>
-        <div class="flex items-center relative">
-          <input data-card type="text" name="card_num" id="card_num" class="form-control form-control--style2 mr-2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" maxlength="4" value="" required>
-          <input data-card type="text" name="card_num2" id="card_num2" class="form-control form-control--style2 mr-2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" maxlength="4" value="" required>
-          <input data-card type="text" name="card_num3" id="card_num3" class="form-control form-control--style2 mr-2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" maxlength="4" value="" required>
-          <input data-card type="text" name="card_num4" id="card_num4" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" maxlength="4" value="" required>
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_num">Numéro de la carte&nbsp;:</label>
+        <div class="d-flex align-items-center relative">
+          <input data-card type="text" name="card_num" id="card_num" class="form-control mr-2" maxlength="4" value="" required>
+          <input data-card type="text" name="card_num2" id="card_num2" class="form-control mr-2" maxlength="4" value="" required>
+          <input data-card type="text" name="card_num3" id="card_num3" class="form-control mr-2" maxlength="4" value="" required>
+          <input data-card type="text" name="card_num4" id="card_num4" class="form-control" maxlength="4" value="" required>
           <span class="form-error">Error message</span>
           <span class="form-required-indicator">*</span>
         </div>
       </div>
     </div>
     <div class="form-group mb-2">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_date">Date d’expiration :</label>
-        <div class="flex items-center relative" style="flex: 0 0 28%">
-          <input type="text" id="card_date" name="card_date" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" placeholder="MM/YYYY" value="" required>
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_date">Date d’expiration&nbsp;:</label>
+        <div class="d-flex align-items-center relative" style="flex: 0 0 30%">
+          <input type="text" id="card_date" name="card_date" class="form-control" placeholder="MM/YYYY" value="" required>
           <span class="form-error">Error message</span>
           <span class="form-required-indicator">*</span>
         </div>
       </div>
     </div>
     <div class="form-group">
-      <div class="sm:flex items-center">
-        <label class="mb-0 sm:w-5/12 sm:text-right sm:mr-4 flex-shrink-0" for="card_cvv">CVV :</label>
-        <div class="flex items-center relative" style="flex: 0 0 14%;">
-          <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" placeholder="123" value="" required>
+      <div class="d-sm-flex align-items-center">
+        <label class="mb-0 col-sm-5 pl-0 text-sm-right flex-shrink-0" for="card_cvv">CVV&nbsp;:</label>
+        <div class="d-flex align-items-center relative" style="flex: 0 0 15%;">
+          <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control" placeholder="123" value="" required>
           <span class="form-error">Error message</span>
           <span class="form-required-indicator">*</span>
         </div>
       </div>
     </div>
-
-    {% if agreeOnStep2 == true %}
-
-      <div class="flex-shrink-0 p-4 md:px-20 lg:py-6 bg-red-500 mb-6 text-white mt-10 sm:-mx-8">
-        <div class="form-group">
-          <div class="form-checkbox form-checkbox--style2">
-            <input type="checkbox" name="agree" id="agree">
-            <label for="agree" class="text-sm leading-tight">Je confirme avoir lu et accepté la charte de confidentialité, les
-              <a href="#" class="underline hover:no-underline">
-                <strong>C.G.U.</strong>
-              </a>
-              et les
-              <a href="#" class="underline hover:no-underline">
-                <strong>C.G.V.</strong>
-              </a>, ainsi que l'offre présentée à droite.</label>
-          </div>
-        </div>
-        <div class="form-group text-center mb-0">
-          <button type="submit" class="btn btn--xl btn--success">Valider et Payer</button>
-        </div>
-      </div>
-
-    {% else %}
-
-      <div class="form-group text-center mb-8 md:mb-12">
-        <button type="submit" class="btn btn--xl w-full btn--success">Valider la Commande et Payer</button>
-      </div>
-
-    {% endif %}
+    <div class="form-group text-center mb-8 md:mb-12">
+      <button type="submit" class="btn btn--xl w-full btn--success">Valider la Commande et Payer</button>
+    </div>
   </form>
 </div>

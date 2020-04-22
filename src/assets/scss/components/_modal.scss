@@ -1,0 +1,82 @@
+.modal {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: $zindex-modal;
+  padding: 1rem;
+  outline: none !important;
+  opacity: 0;
+
+  .is-modal-open & {
+    opacity: 100;
+    pointer-events: auto;
+  }
+
+  &__backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: $transition-base;
+    will-change: transform opacity;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: $zindex-modal-backdrop;
+  }
+
+  &__dialog {
+    transition: $transition-base;
+    will-change: transform;
+    background: $white;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow-lg;
+    z-index: $zindex-modal;
+    overflow: auto;
+    max-width: 42rem;
+
+    .is-modal-open & {
+      transform: translateY(0);
+    }
+  }
+
+  &__footer {
+    background: $white;
+    position: sticky;
+    bottom: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &__close {
+    cursor: pointer;
+    z-index: $zindex-modal;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &.is-static {
+    [data-modal-close] {
+      pointer-events: none;
+    }
+
+    .modal__close {
+      display: none;
+    }
+  }
+}

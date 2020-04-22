@@ -1,0 +1,25 @@
+{% extends 'includes/layouts/layout-v8.twig' %}
+{% set step = 2 %}
+{% set logo = false %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-lg-8 mb-4 mb-lg-0">
+        <div class="card bg-gray-100">
+          <div class="card__header">
+            <h1>
+              Payer ici
+            </h1>
+          </div>
+          <div class="card__body">
+            {% include './includes/blocks/form-step2-v5.twig' %}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        {% include './includes/blocks/votre-recherche-v5-SCREENSHOT-4.twig' %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,71 @@
+.steps {
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 1.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:first-child,
+      &:last-child {
+        width: 16rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        transform: translateX(90px);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='105' height='22' viewBox='0 0 105 22'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:none;stroke:%23e1e6eb;stroke-width:7px;%7D.b%7Bfill:%23e1e6eb;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-498.5 -17.5)'%3E%3Cline class='a' x2='97' transform='translate(498.5 28.5)'/%3E%3Cpath class='b' d='M11,0,22,14H0Z' transform='translate(603.5 17.5) rotate(90)'/%3E%3C/g%3E%3C/svg%3E");
+        top: 0.6rem;
+        width: 105px;
+        height: 22px;
+      }
+
+      &:last-child::before {
+        content: none;
+      }
+    }
+  }
+
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $blue;
+    color: $blue;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    font-weight: $font-weight-bold;
+    font-size: 1.125rem;
+
+    .is-done & {
+      color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $blue;
+      border-color: $blue;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.87' height='14.05' viewBox='0 0 19.87 14.05'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:none;stroke:%23fff;stroke-width:2px;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M1438.219-1668.185l6.527,6.527,11.929-11.929' transform='translate(-1437.512 1674.294)'/%3E%3C/svg%3E");
+    }
+
+    .is-active & {
+      background-color: $blue;
+      border-color: $blue;
+      color: $white;
+    }
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+}

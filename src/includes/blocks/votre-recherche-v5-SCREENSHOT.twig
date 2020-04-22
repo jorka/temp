@@ -1,8 +1,8 @@
-<div class="p-4 mb-2 text-left h-full {% if colorTheme == 'blue' %}text-white {% if primaryColor == 'bluekiosk' %}bg-blue-500{% else %}bg-blue-600{% endif %} {% else %} bg-gray-200{% endif %}">
-  <h2 class="text-xl font-bold mb-2 text-center">Rappel de l’offre sélectionnée</h2>
-  <div class="sm:flex items-center">
+<div class="p-4 mb-2 text-left h-full bg-gray-200">
+  <h2 class="h5 mb-3 text-center">Rappel de l’offre sélectionnée</h2>
+  <div class="d-sm-flex align-items-center">
     <div
-      class="preview preview--sm {% if primaryColor == 'bluekiosk' %}preview--bluekiosk{% endif %} mb-4 mx-auto sm:mx-0 lg:mb-6" data-text="Mode d'emploi">
+      class="preview preview--sm mb-4 mx-auto mx-sm-0 mb-lg-4" data-text="Mode d'emploi">
       {# if logo #}
       <span data-logo class="preview__logo"></span>
       <span class="preview__recherche">
@@ -11,46 +11,46 @@
       </span>
       <div class="preview__in"></div>
     </div>
-    <div class="sm:ml-6 min-w-0">
-      <ul class="mb-2 leading-tight text-sm text-center">
+    <div class="ml-sm-3" style="min-width:0;">
+      <ul class="mb-2 text-sm text-center list-unstyled">
         <li class="mb-2">Marque :
-          <span data-search="marque" class="block truncate" title="Apple">Apple</span>
+          <span data-search="marque" class="d-block text-truncate" title="Apple">Apple</span>
         </li>
         <li class="mb-2">Modèle :
-          <span data-search="model" class="block truncate" title="iPhone 8 plus">iPhone 8 plus</span>
+          <span data-search="model" class="d-block text-truncate" title="iPhone 8 plus">iPhone 8 plus</span>
         </li>
         <li>Votre Email :
-          <span data-search="email" class="block truncate" title="marie.duchamps264@gmail.com">marie.duchamps264@gmail.com</span>
+          <span data-search="email" class="d-block text-truncate" title="marie.duchamps264@gmail.com">marie.duchamps264@gmail.com</span>
         </li>
       </ul>
     </div>
   </div>
-  <div class="flex mb-4">
-    <span class="flex-shrink-0 mr-4 -mt-1">
+  <div class="d-flex mb-1">
+    <span class="flex-shrink-0 mr-4">
       {{ icon('manuals', 'w-6 h-6 text-gray-600') }}
     </span>
     <div>
-      <h3 class="text-sm text-gray-800">Manuels d’utilisation</p>
+      <p class="text-sm text-body">Manuels d’utilisation</p>
     </div>
   </div>
-  <div class="flex mb-4">
-    <span class="flex-shrink-0 mr-4 -mt-1">
+  <div class="d-flex mb-1">
+    <span class="flex-shrink-0 mr-4">
       {{ icon('guides', 'w-6 h-6 text-gray-600') }}
     </span>
     <div>
-      <h3 class="text-sm text-gray-800">Guides pour la maison</p>
+      <p class="text-sm text-body">Guides pour la maison</p>
     </div>
   </div>
-  <div class="flex mb-4">
-    <span class="flex-shrink-0 mr-4 -mt-1">
+  <div class="d-flex mb-1">
+    <span class="flex-shrink-0 mr-4">
       {{ icon('support', 'w-6 h-6 text-gray-600') }}
     </span>
     <div>
-      <h3 class="text-sm text-gray-800">Dépannage à distance</p>
+      <p class="text-sm text-body">Dépannage à distance</p>
     </div>
   </div>
-  <p class="text-sm mb-4">
-    <a href="index.html" class="underline hover:no-underline">Modifier</a>
+  <p class="text-sm mt-3">
+    <a href="index.html" class="underline text-body">Modifier</a>
   </p>
   <p class="text-sm">* Période d'essai : 1,99 € ttc pour 3 jours</p>
   {% include './offer-description-v4.twig' %}

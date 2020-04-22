@@ -1,214 +1,141 @@
-<footer class="py-10 bg-footer-bg text-footer-color text-sm mt-48">
+<footer class="footer">
   <div class="container">
-    <div class="sm:flex -mx-2">
-      <div class="w-full mb-6 sm:mb-0 w-5/12 px-2">
-        <h3 class="text-white text-xl mb-4">
-          Nos services techniques sont à votre disposition.
-        </h3>
-        <p class="text-lg mb-4">
-          N'hésitez pas à nous solliciter 7j/7 !
-        </p>
-        <p class="mb-1">
+    <div class="row">
+      <div class="col-md-5 mr-auto">
+        <h3>Nos services techniques sont à votre disposition.</h3>
+        <h5 class="mb-4">N'hésitez pas à nous solliciter 7j/7 !</h5>
+        <div class="phone-support mb-5">
           <a href="tel:0805086524">
-            <img src=" assets/img/phone2.png" alt=" " />
+            <img src=" assets/img/phone2.png" alt=" "/>
           </a>
-        </p>
-        <p class="text-xs mb-6">
-          Du lundi au Dimanche de 10h à 17h
-        </p>
+          <div class="phone-support__info">Du lundi au Dimanche de 10h à 17h</div>
+        </div>
         <p class="mb-6">
           {{ picture('assets/img/cards-payment.png', '', '') }}
         </p>
-        <div class="flex justify-center sm:justify-start -mx-4 mb-6">
-          <div class="px-4">
-            <a href="#" class="text-white hover:text-blue-500">
-              {{ icon('facebook', 'w-6 h-6') }}
+        <ul class="list-inline footer__social text-center text-md-left">
+          <li class="list-inline-item">
+            <a href="#">
+              {{ icon('facebook', '') }}
             </a>
-          </div>
-          <div class="px-4">
-            <a href="#" class="text-white hover:text-blue-500">
-              {{ icon('instagram', 'w-6 h-6') }}
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              {{ icon('instagram', '') }}
             </a>
-          </div>
-          <div class="px-4">
-            <a href="#" class="text-white hover:text-blue-500">
-              {{ icon('pinterest', 'w-6 h-6') }}
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              {{ icon('pinterest', '') }}
             </a>
-          </div>
-          <div class="px-4">
-            <a href="#" class="text-white hover:text-blue-500">
-              {{ icon('twitter', 'w-6 h-6') }}
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              {{ icon('twitter', '') }}
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
         <p class="mb-2">
           kiosknotice.com
         </p>
         <p class="mb-2">
           Tuts
         </p>
-        <p>
-          City of Sofia 1142, Region of Sofia, Sofia Municipality, district
-          Sredets, 16 Patriarh Evtimiy Blvd., entrance A, floor 1, apartment 5
-        </p>
+        <p>City of Sofia 1142, Region of Sofia, Sofia Municipality, district Sredets,<br>
+          16 Patriarh Evtimiy Blvd., entrance A, floor 1, apartment 5</p>
+
       </div>
-      <div class="w-full w-6/12 ml-auto px-2">
-        <h3 class="text-white text-xl mb-4">
-          Les Marques Populaires
-        </h3>
-        <div class="flex -mx-2 mb-6">
-          <div class="px-2">
-            <span class="p-2 bg-white rounded-md block">
-              {{ picture('assets/img/aeg.png', '', '') }}
-            </span>
-          </div>
-          <div class="px-2">
-            <span class="p-2 bg-white rounded-md block">
-              {{ picture('assets/img/brandt.png', '', '') }}
-            </span>
-          </div>
-          <div class="px-2">
-            <span class="p-2 bg-white rounded-md block">
-              {{ picture('assets/img/electrolux.png', '', '') }}
-            </span>
-          </div>
-          <div class="px-2">
-            <span class="p-2 bg-white rounded-md block">
-              {{ picture('assets/img/garmin.png', '', '') }}
-            </span>
-          </div>
-          <div class="px-2">
-            <span class="p-2 bg-white rounded-md block">
-              {{ picture('assets/img/huawei.png', '', '') }}
-            </span>
-          </div>
+      <div class="col-md-6">
+        <h4>Les Marques Populaires</h4>
+        <div class="mb-4 d-flex align-items-center justify-content-between">
+          <span>{{ picture('assets/img/aeg.png', 'img-fluid rounded p-2 d-block bg-white', '') }}</span>
+          <span class="ml-2">{{ picture('assets/img/brandt.png', 'img-fluid rounded p-2 d-block bg-white', '') }}</span>
+          <span class="ml-2">{{ picture('assets/img/electrolux.png', 'img-fluid rounded p-2 d-block bg-white', '') }}</span>
+          <span class="ml-2">{{ picture('assets/img/garmin.png', 'img-fluid rounded p-2 d-block bg-white', '') }}</span>
+          <span class="ml-2">{{ picture('assets/img/huawei.png', 'img-fluid rounded p-2 d-block bg-white', '') }}</span>
         </div>
 
-        <div class="flex -mx-2">
-          <div class="w-1/2 px-2">
-            <h3 class="text-white text-xl mb-4">
-              Navigation
-            </h3>
-            <ul class="mb-6">
+        <div class="row mb-3">
+          <div class="col-6">
+            <h4>Navigation</h4>
+            <ul class="list-unstyled">
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Accueil
-                </a>
+                <a href="#">Accueil</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Nos Garanties
-                </a>
+                <a href="#">Nos Garanties</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Questions fréquentes
-                </a>
+                <a href="#">Questions fréquentes</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Partenariat
-                </a>
+                <a href="#">Partenariat</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Nous Contacter
-                </a>
+                <a href="#">Nous Contacter</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Plan du Site
-                </a>
+                <a href="#">Plan du Site</a>
               </li>
             </ul>
           </div>
-          <div class="w-1/2 px-2">
-            <h3 class="text-white text-xl mb-4">
-              Informations
-            </h3>
-            <ul class="mb-6">
+          <div class="col-6">
+            <h4>Informations</h4>
+            <ul class="list-unstyled">
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  C.G.U.
-                </a>
+                <a href="#">C.G.U.</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  C.G.V.
-                </a>
+                <a href="#">C.G.V.</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Confidentialité
-                </a>
+                <a href="#">Confidentialité</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Cookies
-                </a>
+                <a href="#">Cookies</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Mentions Légales
-                </a>
+                <a href="#">Mentions Légales</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">FAQ</a>
+                <a href="#">FAQ</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Formulaire de rétractation
-                </a>
+                <a href="#">Formulaire de rétractation</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="flex -mx-2">
-          <div class="w-1/2 px-2">
-            <h3 class="text-white text-xl mb-4">
-              Nos Services
-            </h3>
-            <ul class="mb-6">
+        <div class="row">
+          <div class="col-6">
+            <h4>Nos Services</h4>
+            <ul class="list-unstyled">
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Manuels d'Utilisation
-                </a>
+                <a href="#">Manuels d'Utilisation</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Dépannage à distance
-                </a>
+                <a href="#">Dépannage à distance</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Guides pour la Maison
-                </a>
+                <a href="#">Guides pour la Maison</a>
               </li>
             </ul>
           </div>
-          <div class="w-1/2 px-2">
-            <h3 class="text-white text-xl mb-4">
-              Abonnement aux Services
-            </h3>
-            <ul class="mb-6">
+          <div class="col-6">
+            <h4>Abonnement aux Services</h4>
+            <ul class="list-unstyled">
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Connexion
-                </a>
+                <a href="#">Connexion</a>
               </li>
               <li>
-                <a href="#" class="py-1 inline-block hover:text-white">
-                  Mon Abonnement
-                </a>
+                <a href="#">Mon Abonnement</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <hr class="opacity-25 mt-10 mb-4" />
-    <p class="text-xs">
-      © Tous droits réservés, 2017-2020
-    </p>
+    <hr>
+    <p class="text-xs">© Tous droits réservés, 2017-2020</p>
   </div>
 </footer>

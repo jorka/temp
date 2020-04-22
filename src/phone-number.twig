@@ -1,0 +1,40 @@
+{% extends 'includes/layouts/layout-v8.twig' %}
+
+{% block content %}
+  <div class="container">
+    <div class="pt-4 pt-lg-8 row align-items-center justify-content-center">
+
+      <div class="col-lg-6 mb-6 mb-lg-0">
+        <div class="card bg-gray-100">
+          <div class="card__header">
+            <h1>
+              Vous avez presque fini…
+            </h1>
+          </div>
+          <div class="card__body">
+
+            <p class="mb-4 text-body text-sm">
+              Pour mieux satisfaire votre demande de Notice, veuillez indiquer un numéro de téléphone qui sera uniquement utilisé pour l’obtention d’informations complémentaires.
+            </p>
+            <form action="">
+              <div class="form-group">
+                <label for="phone">Numéro de téléphone :</label>
+                <input type="tel" placeholder="Numéro de téléphone" id="phone" name="phone" value="" class="form-control form-control--style2 {% if primaryColor == 'bluekiosk' %}form-control--bluekiosk{% endif %}" required autocomplete="phone">
+                <span class="form-error">Error message</span>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn--lg btn--primary">Suivant</button>
+              </div>
+            </form>
+            <p class="text-xs text-center text-body mb-6">
+              Votre confidentialité est protégée à 100% :<br>
+              vos données ne sont ni échangées, ni données, ni vendues.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock %}

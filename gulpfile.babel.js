@@ -12,22 +12,19 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPngquant = require('imagemin-pngquant');
 const newer = require('gulp-newer');
 const postcss = require('gulp-postcss');
-const postcssEasyImport = require('postcss-easy-import');
-const postcssNested = require('postcss-nested');
-const postcssPresetEnv = require('postcss-preset-env');
 const source = require('vinyl-source-stream');
 const sourcemaps = require('gulp-sourcemaps');
 const svgSprite = require('gulp-svg-sprite');
 const terser = require('gulp-terser');
 const webp = require('gulp-webp');
-const tailwindcss = require('tailwindcss');
-const purgecss = require('@fullhuman/postcss-purgecss');
 const twig = require('gulp-twig');
 const assign = require('lodash.assign');
 const log = require('gulplog');
 const cond = require('gulp-cond');
 const cssnano = require('cssnano');
 const index = require('gulp-index');
+const sass = require('gulp-sass');
+const autoprefixer = require('autoprefixer');
 require('dotenv').config();
 const server = browserSync.create();
 
@@ -45,6 +42,7 @@ const path = {
   dist: env === 'production' ? 'dist' : 'build',
   assets: 'assets',
   css: 'css',
+  scss: 'scss',
   js: 'js',
   images: 'img',
   sprite: 'sprite',
@@ -53,12 +51,6 @@ const path = {
 /* 
 ----------------------- HTML --------------------------
 */
-// const assetsPathConfig = environment => {
-//   environment.addGlobal('assets', path.assets);
-//   environment.addGlobal('images', path.images);
-//   environment.addGlobal('css', path.css);
-//   environment.addGlobal('js', path.js);
-// };
 
 const html = () => {
   return gulp
@@ -80,37 +72,25 @@ const html = () => {
 ----------------------- CSS --------------------------
 */
 
-let postCssPlugins = [
-  postcssEasyImport({
-    prefix: '_',
-  }),
-  tailwindcss(`${path.baseUrl}/tailwind.config.js`),
-  postcssNested,
-  postcssPresetEnv({
-    stage: 1,
-  }),
-  env === 'production' &&
-    purgecss({
-      content: [
-        `${path.baseUrl}/${path.src}/**/*.twig`,
-        `${path.baseUrl}/${path.src}/**/*.vue`,
-        `${path.baseUrl}/${path.src}/**/*.js`,
-      ],
-      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-    }),
-  env === 'production' && cssnano(),
-].filter(Boolean);
-
 const css = () => {
   return gulp
-    .src(`${path.baseUrl}/${path.src}/${path.assets}/${path.css}/styles.css`, {
-      allowEmpty: true,
-    })
+    .src(`${path.baseUrl}/${path.src}/${path.assets}/${path.scss}/styles.scss`)
     .pipe(cond(env === 'development', sourcemaps.init()))
-    .pipe(postcss(postCssPlugins))
-    .on('error', function(error) {
-      console.log(error);
-    })
+    .pipe(
+      sass({
+        includePaths: [
+          `${path.baseUrl}/${path.src}/${path.assets}/${path.scss}/**/*.scss`,
+          './node_modules/',
+        ],
+      }),
+    )
+    .on('error', sass.logError)
+    .pipe(
+      postcss([
+        autoprefixer(),
+        cssnano({ discardComments: { removeAll: true } }),
+      ]),
+    )
     .pipe(cond(env === 'development', sourcemaps.write('./')))
     .pipe(gulp.dest(`${path.baseUrl}/${path.dist}/${path.assets}/${path.css}`))
     .pipe(server.stream());
@@ -284,7 +264,7 @@ const htmlList = () => {
 */
 const watch = () => {
   gulp.watch(
-    `${path.baseUrl}/${path.src}/${path.assets}/${path.css}/**/*.css`,
+    `${path.baseUrl}/${path.src}/${path.assets}/${path.scss}/**/*.scss`,
     css,
   );
   gulp.watch(

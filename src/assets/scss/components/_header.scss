@@ -1,0 +1,17 @@
+.header {
+  background: $white;
+  padding: 0.5rem 0;
+  box-shadow: $box-shadow-sm;
+  user-select: none;
+
+  @include media-breakpoint-up(md) {
+    padding: 0.75rem 0;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

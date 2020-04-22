@@ -1,5 +1,5 @@
 {% macro icon(name, className) %}
-  <svg class="inline-block fill-current {{ className }}" aria-hidden="true" role="presentation">
+  <svg class="icon {{ className }}" aria-hidden="true" role="presentation">
     <use xlink:href="assets/img/sprite.svg#icon-{{ name }}"></use>
   </svg>
 {% endmacro %}
