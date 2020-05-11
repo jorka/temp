@@ -10,7 +10,7 @@
     color: $white;
     font-weight: bold;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     flex-shrink: 0;
     position: relative;
     font-size: 1.25rem;
@@ -22,6 +22,25 @@
 
     @include media-breakpoint-up(xl) {
       font-size: 1.5rem;
+    }
+
+    &__brand {
+      width: 3rem;
+      height: 3rem;
+      background: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 100%;
+      box-shadow: $box-shadow-lg;
+      margin-right: 1rem;
+      flex-shrink: 0;
+
+      @include media-breakpoint-up(sm) {
+        width: 5rem;
+        height: 5rem;
+      }
     }
 
     h1,

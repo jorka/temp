@@ -1,0 +1,48 @@
+{% extends 'includes/layouts/layout-v8.twig' %}
+{% set step = 1 %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="card bg-gray-100 h-full">
+          <div class="card__header">
+            <h1 class="text-left d-flex align-items-center justify-content-center">
+              <span class="card__header__brand">
+                <img src="assets/img/brands/logo-samsung.svg" class="img-fluid" alt="">
+              </span>
+              Rechercher Votre Mode d'Emploi ici
+              {# Rechercher Votre Mode D’Emploi : #}
+            </h1>
+          </div>
+          <div class="card__body">
+            {% include './includes/blocks/form-step1-v5.twig' %}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="border p-4 pt-6 h-full">
+          {% include './includes/blocks/services-v3.twig' %}
+          {% include './includes/blocks/offer-description-v3.twig' %}
+          <div class="mt-4">
+            {% include './includes/blocks/trust-features.twig' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="border p-4 h-full">
+          {% include './includes/blocks/steps-information-v2.twig' %}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        {% include './includes/blocks/video.twig' %}
+      </div>
+    </div>
+  </div>
+
+  {% include 'includes/components/footer-logos.twig' %}
+  {% include 'includes/components/footer-v2.twig' %}
+  {% include 'includes/components/modal-cgu.twig' %}
+{% endblock %}
