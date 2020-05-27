@@ -76,3 +76,53 @@ a.underline:hover {
 .color-orange {
   color: #dd6b20;
 }
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.w-4 {
+  width: 1.125rem !important;
+}
+
+.h-4 {
+  height: 1.125rem !important;
+}
+
+.bg-danger-light {
+  background: #fbebeb;
+}
+
+.cc-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  opacity: 0.6;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.step-2-max-width {
+  max-width: 36rem;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 56rem;
+  }
+}
+
+.text-gray-500 {
+  color: #a0aec0;
+}

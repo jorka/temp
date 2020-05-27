@@ -7,9 +7,34 @@
 
 <!doctype html>
 <html lang="fr">
-  {% include "../components/head.twig" %}
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="{% block metaDescription %}{{ "Notices" }}{% endblock %}"/>
+    <meta name="author" content="Notices"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      {% block metaTitle %}
+        {{ "Notices"  }}
+      {% endblock %}
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#cb202a">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#cb202a">
+    <meta name="theme-color" content="#cb202a">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    {% block css %}
+      <link rel="stylesheet" href="assets/css/styles.css"/>
+    {% endblock %}
+  </head>
   <body class="{% if colorTheme == 'blue' %} {% if primaryColor == 'bluekiosk' %} bg-bluekiosk {% else %} bg-blue-500 {% endif %} {% endif %}">
-    {% include "../components/header.twig" %}
+    {% block header %}
+      {% include "../components/header.twig" %}
+    {% endblock %}
     {% block content %}{% endblock %}
 
     {% block footer %}

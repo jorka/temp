@@ -9,7 +9,9 @@
     "dev-list": "cross-env NODE_ENV=development gulp list",
     "prod": "cross-env NODE_ENV=production gulp serve",
     "prod-build": "cross-env NODE_ENV=production gulp build",
-    "prod-list": "cross-env NODE_ENV=production gulp list"
+    "prod-list": "cross-env NODE_ENV=production gulp list",
+    "payment-css": "purgecss --css dist/assets/css/styles.css --content dist/payment-iframe.html --output dist/assets/css/payment.css",
+    "payment-css-alternative": "purgecss --css dist/assets/css/styles.css --content dist/payment-iframe-alternative.html --output dist/assets/css/payment-alternative.css"
   },
   "keywords": [],
   "author": "",
@@ -51,6 +53,7 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
     "prettier-plugin-twig-melody": "^0.3.9",
+    "purgecss": "^2.2.1",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0",
     "vinyl-buffer": "^1.0.1",

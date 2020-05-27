@@ -1,0 +1,14 @@
+{% extends 'includes/layouts/layout-v8.twig' %}
+{% set step = 2 %}
+{% set logo = false %}
+{% block css %}
+  <link rel="stylesheet" href="assets/css/payment-alternative.css"/>
+{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+  {% include './includes/blocks/payment-form-v2.twig' %}
+{% endblock %}
+
+
+{% block footer %}{% endblock %}
+{% block js %}{% endblock %}

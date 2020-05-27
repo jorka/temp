@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Notices"/>
+    <meta name="author" content="Notices"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>
+      
+        Notices
+      
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#cb202a">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#cb202a">
+    <meta name="theme-color" content="#cb202a">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    
+  <link rel="stylesheet" href="assets/css/payment-alternative.css"/>
+
+  </head>
+  <body class="">
+    
+    
+  <form action="">
+  <div class="form-group mb-2">
+    <label for="card_name" class="text-sm font-weight-bold">Titulaire de la carte&nbsp;:</label>
+    <div class="d-flex align-items-center flex-grow relative">
+      <input type="text" class="form-control" name="card_name" id="card_name" value="" required>
+    </div>
+  </div>
+  <div class="form-group mb-2">
+    <label for="card_num" class="text-sm font-weight-bold">Numéro de la carte&nbsp;:</label>
+    <div class="position-relative">
+      <span class="cc-icon">
+  <svg class="icon w-4 h-4 text-muted" aria-hidden="true" role="presentation">
+    <use xlink:href="assets/img/sprite.svg#icon-lock"></use>
+  </svg>
+</span>
+      <input data-card type="text" name="card_num" id="card_num" class="form-control mr-2" value="" required>
+    </div>
+  </div>
+  <div class="d-flex">
+    <div class="form-group mb-2 mr-2">
+      <label for="card_date" class="text-sm font-weight-bold">Date d’expiration&nbsp;:</label>
+      <input type="text" id="card_date" name="card_date" class="form-control" placeholder="MM/YYYY" value="" required>
+    </div>
+    <div class="form-group">
+      <label for="card_cvv" class="text-sm font-weight-bold">CVV&nbsp;:</label>
+      <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control" placeholder="123" value="" required style="max-width: 100px;">
+    </div>
+  </div>
+  <div class="form-group text-center">
+    <button type="submit" class="btn btn--lg btn--success">Valider la Commande et Payer</button>
+  </div>
+</form>
+
+
+
+    
+
+
+    
+  </body>
+</html>
+

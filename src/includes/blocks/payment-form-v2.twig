@@ -1,0 +1,28 @@
+<form action="">
+  <div class="form-group mb-2">
+    <label for="card_name" class="text-sm font-weight-bold">Titulaire de la carte&nbsp;:</label>
+    <div class="d-flex align-items-center flex-grow relative">
+      <input type="text" class="form-control" name="card_name" id="card_name" value="" required>
+    </div>
+  </div>
+  <div class="form-group mb-2">
+    <label for="card_num" class="text-sm font-weight-bold">Numéro de la carte&nbsp;:</label>
+    <div class="position-relative">
+      <span class="cc-icon">{{ icon('lock', 'w-4 h-4 text-muted') }}</span>
+      <input data-card type="text" name="card_num" id="card_num" class="form-control mr-2" value="" required>
+    </div>
+  </div>
+  <div class="d-flex">
+    <div class="form-group mb-2 mr-2">
+      <label for="card_date" class="text-sm font-weight-bold">Date d’expiration&nbsp;:</label>
+      <input type="text" id="card_date" name="card_date" class="form-control" placeholder="MM/YYYY" value="" required>
+    </div>
+    <div class="form-group">
+      <label for="card_cvv" class="text-sm font-weight-bold">CVV&nbsp;:</label>
+      <input type="tel" id="card_cvv" maxlength="3" name="card_cvv" class="form-control" placeholder="123" value="" required style="max-width: 100px;">
+    </div>
+  </div>
+  <div class="form-group text-center">
+    <button type="submit" class="btn btn--lg btn--success">Valider la Commande et Payer</button>
+  </div>
+</form>
